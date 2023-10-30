@@ -27,10 +27,10 @@ jobs:
           name: test-coverage-report
           path: target/site/jacoco/
           retention-days: 7
-  update_coverage_report:
-    needs: run_tests
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    uses: ./.github/workflows/test_coverage_report.yaml
+#  update_coverage_report:
+#    needs: run_tests
+#    permissions:
+#      contents: read
+#      pages: write
+#      id-token: write
+#    uses: ./.github/workflows/test_coverage_report.yaml
