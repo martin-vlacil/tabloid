@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  k8s-doc-example-container:
+    image: k8s-doc-example-app:3
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/k8s-doc-example-app
+    ports:
+      - "8088:8088"
